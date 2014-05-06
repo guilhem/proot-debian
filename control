@@ -1,7 +1,7 @@
 Source: proot
 Section: utils
 Maintainer: Cédric VINCENT <cedric.vincent@gmail.com>
-Build-Depends: debhelper (>= 4.1.16), libtalloc-dev, uthash-dev, libarchive-dev
+Build-Depends: debhelper (>= 8), libtalloc-dev, uthash-dev, libarchive-dev
 
 Package: proot
 Architecture: any
