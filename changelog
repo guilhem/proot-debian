@@ -1,0 +1,11 @@
+proot (3.2.2-1) stable; urgency=low
+
+  * version number update by debtransform
+
+ -- debtransform <build@opensuse.org>  Fri, 10 Jan 2014 19:32:57 +0000
+
+proot (3.0-1) stable; urgency=low
+
+  * First -- and last -- changelog entry
+
+ -- Cédric VINCENT <cedric.vincent@gmail.com>  Mon, 13 Feb 2012 10:50:38 +0100

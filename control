@@ -1,0 +1,37 @@
+Source: proot
+Section: utils
+Maintainer: Cédric VINCENT <cedric.vincent@gmail.com>
+Build-Depends: debhelper (>= 4.1.16), libtalloc-dev, uthash-dev, libarchive-dev
+
+Package: proot
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: chroot, mount --bind, and binfmt_misc without privilege/setup
+ PRoot is a user-space implementation of chroot, mount --bind,
+ and binfmt_misc.  This means that users don't need any privileges
+ or setup to do things like using an arbitrary directory as the new
+ root filesystem, making files accessible somewhere else in the
+ filesystem hierarchy, or executing programs built for another CPU
+ architecture transparently through QEMU user-mode.  Also, developers
+ can add their own features or use PRoot as a Linux process
+ instrumentation engine thanks to its extension mechanism.  Technically
+ PRoot relies on ptrace, an unprivileged system-call available in
+ every Linux kernel.
+
+Package: care
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: Comprehensive Archiver for Reproducible Execution
+ CARE monitors the execution of the specified command to create an
+ archive that contains all the material required to re-execute it in
+ the same context. That way, the command will be reproducible
+ everywhere, even on Linux systems that are supposed to be not
+ compatible with the original Linux system. CARE is typically useful
+ to get reliable bug reports, demonstrations, academic experiences,
+ tutorials, portable applications, minimal rootfs, file-system
+ coverage, ... 
+ By default, the reproduced execution uses environment variables and
+ files from the archive, not from the actual Linux system. However,
+ events external to the monitored programs -- like key strokes or
+ network packets -- are not archived; it's up to the user to
+ automatize or document such external interaction.
